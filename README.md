@@ -16,7 +16,7 @@ This app is a project for the third module of the Microverse curriculum.
 
 ## Live Demo
 
-Click [here](https://sleepy-panini-905730.netlify.app) and [here](https://math-magician-nat.herokuapp.com) to test the site yourself!
+Click [here](https://cocky-jackson-2ecaa3.netlify.app/) and [here](https://nat-bookstore.herokuapp.com/) to test the site yourself!
 
 ## Getting Started
 
