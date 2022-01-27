@@ -31,15 +31,15 @@ export const addBookAPI = (payload) => async (dispatch) => {
 export const fetchBookAPI = () => async (dispatch) => {
   const books = await Axios.get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/oA9H87RtWKrctkgy8p80/books');
   const mapBooks = Object.entries(books.data).map(([id, book]) => {
-    const { category, title } = book[0];
-    return { id, category, title };
+    const { title, category } = book[0];
+    return { id, title, category };
   });
   dispatch(fetchBook(mapBooks));
 };
 
 export const removeBookAPI = (id) => async (dispatch) => {
   await Axios.delete(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/oA9H87RtWKrctkgy8p80/books/${id}`);
-  dispatch(removeBook(id));
+  dispatch(removeBook({ id }));
 };
 
 const reducer = (state = initialState, action) => {
