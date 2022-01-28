@@ -3,12 +3,21 @@
 header {
   height: 6rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: baseline;
   font-family: 'Montserrat', sans-serif;
   border-bottom: 1px solid #e8e8e8;
-  padding-left: 6.25rem;
+  padding: 0 6.25rem;
   background-color: #fff;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right img {
+  cursor: pointer;
 }
 
 .logo {
@@ -21,6 +30,7 @@ header {
   list-style: none;
   display: flex;
   gap: 2.5rem;
+  margin-left: 0.5em;
 }
 
 .nav-items > a {

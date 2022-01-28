@@ -18,18 +18,23 @@ const Header = () => {
 
   return (
     <header>
-      <h1 className="logo">Nat&apos;s Bookstore</h1>
-      <nav>
-        <ul className="nav-menu">
-          {
+      <div className="left">
+        <h1 className="logo">Nat&apos;s Bookstore</h1>
+        <nav>
+          <ul className="nav-menu">
+            {
             links.map((link) => (
               <li className="nav-items" key={link.id}>
                 <NavLink to={link.path}>{link.title}</NavLink>
               </li>
             ))
           }
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      </div>
+      <div className="right">
+        <img src="https://img.icons8.com/ios-glyphs/30/0290ff/user--v1.png" alt="user icon" />
+      </div>
     </header>
   );
 };
