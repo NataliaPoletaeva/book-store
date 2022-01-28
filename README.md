@@ -4,7 +4,7 @@
 
 > This is a web-app that allows you to add and remove desirable books to and out of the list!
 
-![image](https://user-images.githubusercontent.com/91270103/150955438-643dd472-fb08-445c-9f59-3cf9c3f45bf0.png)
+![image](https://user-images.githubusercontent.com/91270103/151541423-bdb13e07-75c4-429b-8509-424970d72984.png)
 
 This app is a project for the third module of the Microverse curriculum.
 
