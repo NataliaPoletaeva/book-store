@@ -5,7 +5,7 @@ import Books from './components/Books';
 import Categories from './components/Categories';
 
 const App = () => (
-  <div>
+  <div className="app">
     <Header />
     <Routes>
       <Route

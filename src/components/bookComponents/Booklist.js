@@ -10,15 +10,17 @@ const Booklist = () => {
     dispatch(fetchBookAPI());
   }, [dispatch]);
   return (
-    <div>
+    <ul className="booklist">
       {books.length ? (
         books.map((book) => (
-          <Book book={book} key={book.id} />
+          <li key={book.id} className="book-container">
+            <Book book={book} />
+          </li>
         ))
       ) : (
         <h3 className="booklist-h3">There is no books!</h3>
       )}
-    </div>
+    </ul>
   );
 };
 
